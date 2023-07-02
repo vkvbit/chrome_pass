@@ -4,6 +4,8 @@ A python tool to decrypt username and password saved in google password manager.
 
 It will promt to enter path of both files.
 
+You can find both file in folder: C:\Users\{User}\AppData\Local\Google\Chrome\User Data
+
 For ease, put both file in working directory.
 
 ### Installation
