@@ -1,6 +1,6 @@
 # chrome_pass
 
-### Intallation
+### Installation
 ```
 pip install -r requirements.txt
 ```
