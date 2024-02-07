@@ -9,10 +9,18 @@ import win32crypt
 from Cryptodome.Cipher import AES
 import shutil
 import csv
+import argparse
 
 
-CHROME_PATH_LOCAL_STATE = os.path.normpath(input("enter path of local state: "))
-CHROME_PATH_LOGIN_DATA = os.path.normpath(input("enter path of login data: "))
+parser = argparse.ArgumentParser()
+
+parser.add_argument('--ls', type=str, required=True)
+parser.add_argument('--ld', type=str, required=True)
+
+args = parser.parse_args()
+
+CHROME_PATH_LOCAL_STATE = args.ls
+CHROME_PATH_LOGIN_DATA = args.ld
 
 def get_secret_key():
     try:        
